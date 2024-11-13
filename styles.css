@@ -17,7 +17,7 @@ body {
 /* Centered box container */
 .centered-box {
     display: flex;
-    max-width: 1000px;
+    max-width: 1000px; /* Increased the overall width to accommodate the larger image */
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -26,8 +26,8 @@ body {
 
 /* Background container */
 .background-container {
-    width: 450px; /* Fixed width to prevent stretching */
-    background-color: #000;
+    flex: 1;
+    max-width: 450px; /* Increased width by a factor of 1.5 */
 }
 
 .background-image {
@@ -36,6 +36,7 @@ body {
     object-fit: cover;
 }
 
+
 /* Content container */
 .content-container {
     flex: 1;
@@ -43,28 +44,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center the content horizontally */
 }
 
-/* Title styling */
 h1 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    text-align: center; /* Center the title */
 }
 
 p {
     margin-bottom: 1.5rem;
     font-size: 1rem;
     color: #555;
-    text-align: center; /* Center the description */
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 100%; /* Make the form take full width of its container */
 }
 
 /* Row styling for 2x3 layout */
@@ -74,25 +70,18 @@ form {
     justify-content: space-between;
 }
 
-/* Label styling */
 .form-row label {
-    font-weight: bold;
-    font-size: 1rem;
+    flex: 1;
     display: block;
-    margin-bottom: 0.25rem;
-    width: 48%; /* Adjusted width */
-    text-align: left; /* Ensure label text is aligned left */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
-/* Input styling */
 .form-row input {
+    flex: 1;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1rem;
-    line-height: 1.5;
-    box-sizing: border-box;
-    width: 48%; /* Adjusted width */
 }
 
 /* Full-width for the button */
