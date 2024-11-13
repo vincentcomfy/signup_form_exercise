@@ -1,0 +1,108 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center the entire box in the viewport */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Centered box container */
+.centered-box {
+    display: flex;
+    max-width: 1000px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+/* Background container */
+.background-container {
+    width: 450px; /* Fixed width to prevent stretching */
+    background-color: #000;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content container */
+.content-container {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the content horizontally */
+}
+
+/* Title styling */
+h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center; /* Center the title */
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+    text-align: center; /* Center the description */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%; /* Make the form take full width of its container */
+}
+
+/* Row styling for 2x3 layout */
+.form-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+/* Label styling */
+.form-row label {
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.25rem;
+    width: 48%; /* Adjusted width */
+    text-align: left; /* Ensure label text is aligned left */
+}
+
+/* Input styling */
+.form-row input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+    width: 48%; /* Adjusted width */
+}
+
+/* Full-width for the button */
+button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
